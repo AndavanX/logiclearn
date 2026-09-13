@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 64" role="img" aria-labelledby="logoFullTitle">
+  <title id="logoFullTitle">LogicLearn</title>
+  <defs>
+    <linearGradient id="lgGradFull" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d6336c"/>
+      <stop offset="100%" stop-color="#e0a458"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="22" r="13" fill="none" stroke="url(#lgGradFull)" stroke-width="5"/>
+  <line x1="32" y1="35" x2="32" y2="53" stroke="url(#lgGradFull)" stroke-width="5" stroke-linecap="round"/>
+  <line x1="22" y1="45" x2="42" y2="45" stroke="url(#lgGradFull)" stroke-width="5" stroke-linecap="round"/>
+  <g stroke="#f4c15c" stroke-width="2.25" stroke-linecap="round">
+    <line x1="46" y1="4" x2="46" y2="13"/>
+    <line x1="41.5" y1="8.5" x2="50.5" y2="8.5"/>
+  </g>
+  <text x="70" y="41" font-family="'Fraunces', Georgia, serif" font-size="30" font-weight="600">
+    <tspan fill="#1a1a2e">Logic</tspan><tspan fill="#d6336c">Learn</tspan>
+  </text>
+</svg>

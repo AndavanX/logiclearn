@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — LogicLearn</title>
+  <meta name="description" content="Get in touch with LogicLearn about business automation, student training, or scam awareness sessions.">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="/logo-icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="/" aria-label="LogicLearn home">
+          <svg viewBox="0 0 250 64" class="logo-svg" role="img" aria-labelledby="logoTitle">
+            <title id="logoTitle">LogicLearn</title>
+            <defs>
+              <linearGradient id="lgGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#d6336c"/>
+                <stop offset="100%" stop-color="#e0a458"/>
+              </linearGradient>
+            </defs>
+            <circle cx="32" cy="22" r="13" fill="none" stroke="url(#lgGrad)" stroke-width="5"/>
+            <line x1="32" y1="35" x2="32" y2="53" stroke="url(#lgGrad)" stroke-width="5" stroke-linecap="round"/>
+            <line x1="22" y1="45" x2="42" y2="45" stroke="url(#lgGrad)" stroke-width="5" stroke-linecap="round"/>
+            <g stroke="#f4c15c" stroke-width="2.25" stroke-linecap="round">
+              <line x1="46" y1="4" x2="46" y2="13"/>
+              <line x1="41.5" y1="8.5" x2="50.5" y2="8.5"/>
+            </g>
+            <text x="70" y="41" font-family="'Fraunces', Georgia, serif" font-size="30" font-weight="600">
+              <tspan fill="#1a1a2e">Logic</tspan><tspan fill="#d6336c">Learn</tspan>
+            </text>
+          </svg>
+        </a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/services.html">For Business</a></li>
+        <li><a href="/training.html">For Students</a></li>
+        <li><a href="/awareness.html">Scam Awareness</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html" class="active nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero-about">
+      <h1>Get in Touch</h1>
+      <p>Tell us a bit about what you need and we'll follow up.</p>
+    </section>
+
+    <section class="content-section narrow">
+      <form id="contact-form" class="contact-form">
+        <!-- Honeypot: hidden from real users, bots tend to fill every field -->
+        <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="interest">I'm interested in</label>
+        <select id="interest" name="interest">
+          <option value="business">AI Automation for my Business</option>
+          <option value="training">AI Training for Students</option>
+          <option value="awareness">Scam Awareness Session</option>
+          <option value="other">Something Else</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <p id="form-status" class="form-status" role="status"></p>
+
+      <p class="contact-alt">
+        Prefer email? Reach us directly at
+        <a href="mailto:hello@logiclearn.net">hello@logiclearn.net</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="/services.html">For Business</a>
+      <a href="/training.html">For Students</a>
+      <a href="/awareness.html">Scam Awareness</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+    <p>&copy; 2026 LogicLearn. All rights reserved.</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

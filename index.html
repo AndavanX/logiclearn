@@ -3,29 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LogicLearn — Welcome</title>
+  <title>LogicLearn — AI for Business, Students & Safety</title>
+  <meta name="description" content="LogicLearn helps small businesses automate with AI, trains students in practical AI skills, and teaches everyone how to spot AI-powered scams.">
   <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="/logo-icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <nav>
-      <div class="logo">LogicLearn</div>
+      <div class="logo">
+        <a href="/" aria-label="LogicLearn home">
+          <svg viewBox="0 0 250 64" class="logo-svg" role="img" aria-labelledby="logoTitle">
+            <title id="logoTitle">LogicLearn</title>
+            <defs>
+              <linearGradient id="lgGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#d6336c"/>
+                <stop offset="100%" stop-color="#e0a458"/>
+              </linearGradient>
+            </defs>
+            <circle cx="32" cy="22" r="13" fill="none" stroke="url(#lgGrad)" stroke-width="5"/>
+            <line x1="32" y1="35" x2="32" y2="53" stroke="url(#lgGrad)" stroke-width="5" stroke-linecap="round"/>
+            <line x1="22" y1="45" x2="42" y2="45" stroke="url(#lgGrad)" stroke-width="5" stroke-linecap="round"/>
+            <g stroke="#f4c15c" stroke-width="2.25" stroke-linecap="round">
+              <line x1="46" y1="4" x2="46" y2="13"/>
+              <line x1="41.5" y1="8.5" x2="50.5" y2="8.5"/>
+            </g>
+            <text x="70" y="41" font-family="'Fraunces', Georgia, serif" font-size="30" font-weight="600">
+              <tspan fill="#1a1a2e">Logic</tspan><tspan fill="#d6336c">Learn</tspan>
+            </text>
+          </svg>
+        </a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
       <ul class="nav-links">
         <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="/services.html">For Business</a></li>
+        <li><a href="/training.html">For Students</a></li>
+        <li><a href="/awareness.html">Scam Awareness</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html" class="nav-cta">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <h1>Welcome to LogicLearn</h1>
-      <p>Your journey to smarter learning starts here.</p>
-      <a href="#features" class="btn">Get Started</a>
+      <h1>AI that works for people, not around them.</h1>
+      <p>We help small businesses automate with AI, train students in practical AI skills, and teach everyone how to spot AI-powered scams before they cause harm.</p>
+      <a href="/contact.html" class="btn">Get Started</a>
     </section>
 
-    <section id="features" class="features">
+    <section id="pillars" class="pillars">
+      <a href="/services.html" class="pillar-card pillar-business">
+        <div class="pillar-icon" aria-hidden="true">🏢</div>
+        <h2>AI for Business</h2>
+        <p>Automate the repetitive parts of running a small business — support, scheduling, follow-ups, data entry — without hiring a data science team.</p>
+        <span class="pillar-link">Explore automation →</span>
+      </a>
+      <a href="/training.html" class="pillar-card pillar-training">
+        <div class="pillar-icon" aria-hidden="true">🎓</div>
+        <h2>AI for Students</h2>
+        <p>Practical, beginner-friendly training on how AI actually works, how to use it responsibly, and how to build with it.</p>
+        <span class="pillar-link">See training tracks →</span>
+      </a>
+      <a href="/awareness.html" class="pillar-card pillar-awareness">
+        <div class="pillar-icon" aria-hidden="true">🛡️</div>
+        <h2>Scam Awareness</h2>
+        <p>AI has made scams more convincing than ever. Learn the warning signs, common tactics, and how to protect yourself and your business.</p>
+        <span class="pillar-link">Learn the red flags →</span>
+      </a>
+    </section>
+
+    <section class="features">
       <div class="feature-card">
         <h2>Learn</h2>
         <p>Explore structured lessons designed to help you master new skills at your own pace.</p>
@@ -39,9 +91,22 @@
         <p>Track your progress and build a portfolio of skills that matter.</p>
       </div>
     </section>
+
+    <section class="cta-band">
+      <h2>Not sure where to start?</h2>
+      <p>Tell us what you're trying to do and we'll point you to the right track.</p>
+      <a href="/contact.html" class="btn btn-dark">Talk to us</a>
+    </section>
   </main>
 
   <footer>
+    <div class="footer-links">
+      <a href="/services.html">For Business</a>
+      <a href="/training.html">For Students</a>
+      <a href="/awareness.html">Scam Awareness</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </div>
     <p>&copy; 2026 LogicLearn. All rights reserved.</p>
   </footer>
 
