@@ -21,8 +21,10 @@
 set -euo pipefail
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
-PUBLIC_FILES=(
-  index.html about.html services.html training.html awareness.html contact.html
+# All root-level .html files are public pages (this is a flat static site,
+# nothing non-public is ever named *.html at the root) — globbed instead of
+# hand-listed so a new page doesn't silently get left out of deploys.
+PUBLIC_ASSETS=(
   styles.css script.js logo-icon.svg logo-full.svg site.webmanifest
   favicon-16.png favicon-32.png apple-touch-icon.png icon-192.png icon-512.png og-image.png
 )
@@ -31,7 +33,10 @@ STAGE="$(mktemp -d)"
 trap 'rm -rf "$STAGE"' EXIT
 
 mkdir -p "$STAGE/functions/api"
-for f in "${PUBLIC_FILES[@]}"; do
+for f in *.html; do
+  cp "$f" "$STAGE/$f"
+done
+for f in "${PUBLIC_ASSETS[@]}"; do
   cp "$f" "$STAGE/$f"
 done
 cp functions/api/contact.js "$STAGE/functions/api/contact.js"

@@ -362,6 +362,41 @@ nav {
 .warn-card { border-left: 4px solid var(--coral); }
 .warn-card h3 { color: var(--coral-deep); }
 
+.info-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.info-card-link .pillar-link { display: inline-flex; align-items: center; gap: 0.3rem; margin-top: 0.85rem; font-weight: 600; color: var(--indigo); transition: gap 0.2s var(--ease); }
+.info-card-link:hover .pillar-link { gap: 0.55rem; }
+
+/* Breadcrumb bar on topic detail pages */
+.breadcrumb {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 1.1rem 2rem 0;
+}
+
+.breadcrumb a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.breadcrumb a:hover { color: var(--indigo); }
+
+/* Takeaway / checklist-style list on topic detail pages */
+.takeaway-list {
+  max-width: 800px;
+  margin: 1rem auto 0;
+  padding-left: 1.25rem;
+  color: var(--ink-soft);
+}
+.takeaway-list li { margin-bottom: 0.6rem; }
+.takeaway-list strong { color: var(--ink); }
+
 /* Process steps (services page) */
 .process-list { list-style: none; max-width: 800px; margin: 0 auto; }
 .process-list li { display: flex; gap: 1.25rem; margin-bottom: 1.75rem; align-items: flex-start; }
