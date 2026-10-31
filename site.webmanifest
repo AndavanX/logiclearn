@@ -1,0 +1,12 @@
+{
+  "name": "LogicLearn",
+  "short_name": "LogicLearn",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#4361ee",
+  "background_color": "#f5f2fa",
+  "display": "standalone",
+  "start_url": "/"
+}
