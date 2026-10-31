@@ -1,0 +1,9 @@
+.git
+.gitignore
+.wrangler
+functions
+worker-entry.js
+wrangler.toml
+.assetsignore
+README.md
+deploy.sh
